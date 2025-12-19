@@ -3,74 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Murad Hadjili — Home</title>
-  <meta name="description" content="Personal website and SITE 1101 Individual Project by Murad Hadjili">
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Home — Murad Hadjili</title>
+  <meta name="description" content="Murad Hadjili — Engineering student portfolio">
+
+  <!-- IMPORTANT: relative paths -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+  <!-- HEADER / NAV -->
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="/">Murad Hadjili</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">☰</button>
+      <a class="brand" href="index.html">Murad Hadjili</a>
+
+      <button class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Toggle navigation">
+        ☰
+      </button>
+
       <nav id="primary-navigation" class="primary-navigation">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <!-- MAIN -->
+  <main class="container content">
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Hi, I’m <strong>Murad Hadjili</strong></h1>
-          <p class="lead">I’m a first-year Electrical &amp; Electronics Engineering student at ADA University interested in artificial intelligence, engineering, and design. I’m developing my technical skills through coursework and hands-on projects. This site shares my background, interests, and projects I’ve built during my learning journey.</p>
-          <p class="hero-cta">
-            <a class="btn" href="/projects.html">Explore projects</a>
-            <a class="btn btn-outline" href="/about.html">About Murad</a>
+      <div class="hero-grid">
+
+        <div class="hero-text">
+          <h1>Welcome — I’m Murad</h1>
+          <p class="lead">
+            First-year Electrical & Electronics Engineering student at ADA University.
+            Interested in AI, engineering, and design.
           </p>
-          <p class="subtle">First-year EEE student • AI, engineering &amp; design</p>
         </div>
 
-        <div class="hero-media" aria-hidden="false">
-          <img class="hero-photo" src="/images/profile.jpg" alt="Portrait of Murad Hadjili" width="360" height="360" loading="lazy">
+        <div class="hero-media">
+          <img
+            src="images/profile.jpg"
+            alt="Murad Hadjili"
+            class="hero-photo">
         </div>
+
       </div>
     </section>
 
-    <section class="container features">
-      <article class="card">
-        <h2>Featured Project</h2>
-        <p class="muted">A required project for my SITE 1101 course — built with clean, beginner-friendly code.</p>
-        <div class="project-preview">
-          <h3>Project: Accessible Portfolio</h3>
-          <p>This project showcases a responsive portfolio site, with clear navigation, semantic HTML, and mobile-first design. It demonstrates basic accessibility and clean code practices.</p>
-          <p><a href="/projects.html" class="btn">View Project Details</a></p>
-        </div>
-      </article>
+    <!-- FEATURED PROJECT -->
+    <section class="card featured-project">
+      <h2>Featured Project</h2>
 
-      <aside class="card contact-card">
-        <h3>Connect</h3>
-        <p>You can view my code on GitHub:</p>
-        <p><a href="https://github.com/MuradHadjili017" target="_blank" rel="noopener">github.com/MuradHadjili017</a></p>
-      </aside>
+      <p>
+        A required project for my SITE 1101 course — built with clean,
+        beginner-friendly code.
+      </p>
+
+      <h3>Project: Accessible Portfolio</h3>
+
+      <p>
+        This project showcases a responsive portfolio website with semantic HTML,
+        mobile-first design, and basic accessibility principles.
+      </p>
+
+      <a class="btn-primary" href="projects.html">
+        View Project Details
+      </a>
     </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card contact-section">
+      <h2>Contact 📬</h2>
+
+      <ul class="contact-list">
+        <li>📞 <a href="tel:+994507074448">+994 50 707 44 48</a></li>
+        <li>📧 <a href="mailto:mhajili26219@ada.edu.az">mhajili26219@ada.edu.az</a></li>
+        <li>💻
+          <a href="https://www.codecademy.com/profiles/object9138692086"
+             target="_blank" rel="noopener">
+            Codecademy Profile
+          </a>
+        </li>
+      </ul>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <p>© <span id="year"></span> Murad Hadjili</p>
-      <nav class="footer-nav">
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/projects.html">Projects</a>
-      </nav>
+    <div class="container footer-inner">
+      <p>
+        © <span id="year"></span> Murad Hadjili — ADA University • SITE 1101
+      </p>
     </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
