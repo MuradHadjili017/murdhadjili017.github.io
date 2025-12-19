@@ -292,3 +292,16 @@ body:not(.is-entering) main { opacity: 1; transform: none; }
 @media (max-width:699px){.project-visual{flex:0 0 180px}.project-content{padding:12px}.projects-section::before{display:none}}
 @media (prefers-reduced-motion: reduce){.project-card,.project-visual img,.tag{transition:none !important;transform:none !important}}
 
+/* ===== Home Contact Section ===== */
+.contact-section{padding:20px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid rgba(10,20,40,0.04);box-shadow:0 10px 24px rgba(16,24,40,0.04);margin:1.5rem 0}
+.contact-title{display:flex;align-items:center;gap:.6rem;margin:0 0 .45rem;font-size:clamp(1.1rem,2.6vw,1.4rem);letter-spacing:-0.2px}
+.contact-emoji{font-size:1.05rem;opacity:.95}
+.contact-lead{margin:0 0 12px;color:var(--muted);font-size:.98rem}
+.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.contact-item{display:flex;align-items:center;gap:12px;padding:.55rem .65rem;border-radius:10px;background:linear-gradient(90deg,rgba(3,102,214,0.02),transparent);transition:transform .14s cubic-bezier(.2,.9,.2,1),box-shadow .14s ease}
+.contact-item:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(3,102,214,0.04)}
+.contact-icon{font-size:1rem}
+.contact-link{color:var(--accent-600);font-weight:700;text-decoration:none}
+.contact-link:hover{text-decoration:underline;color:var(--accent)}
+@media (min-width:900px){.contact-section{padding:26px}.contact-list{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion: reduce){.contact-item{transition:none !important;transform:none !important}}
