@@ -8,92 +8,143 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header nav-modern" role="banner">
     <div class="container nav-wrap">
-      <a class="brand" href="/">Murad Hadjili</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">☰</button>
-      <nav id="primary-navigation" class="primary-navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/projects.html" aria-current="page">Projects</a></li>
-        </ul>
+      <a class="brand" href="/" aria-label="Murad Hadjili — Home">
+        <span class="brand-name">Murad Hadjili</span>
+        <span class="brand-sub">Engineering • AI • Design</span>
+      </a>
+
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation" aria-hidden="false">
+        <div class="nav-inner">
+          <ul class="nav-list" role="menubar">
+            <li role="none"><a role="menuitem" href="/" class="nav-link"><span class="nav-emoji">🏠</span><span class="nav-label">Home</span></a></li>
+            <li role="none"><a role="menuitem" href="/about.html" class="nav-link"><span class="nav-emoji">🎓</span><span class="nav-label">About</span></a></li>
+            <li role="none"><a role="menuitem" href="/projects.html" class="nav-link" aria-current="page"><span class="nav-emoji">🚀</span><span class="nav-label">Projects</span></a></li>
+          </ul>
+          <div class="nav-indicator" aria-hidden="true"></div>
+        </div>
       </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true">☰</span>
+      </button>
     </div>
   </header>
 
   <main class="container content projects-section">
-    <h1>Projects</h1>
-    <p class="muted">Selected projects and competition achievements from academic work and practical experience.</p>
+    <header class="projects-header">
+      <h1>Projects <span class="header-emoji">🚀</span></h1>
+      <p class="muted">Featured projects — engineering, robotics, and creative technical work with a focus on learning and impact.</p>
+    </header>
 
     <section class="projects-grid" aria-label="Projects">
-      <article class="project-card">
-        <figure class="project-image">
-          <img src="/images/saf2023.jpeg" class="project-img--full" alt="SAF 2023 robotics competition" loading="lazy">
-        </figure>
-        <div class="project-body">
-          <h3 class="project-title">SAF 2023 – FLL Category (2nd Place)</h3>
-          <p class="project-desc">Participation in the SAF 2023 robotics competition within the FLL category, focusing on engineering design, teamwork, and problem-solving.</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <figure class="project-image">
-          <img src="/images/fll1st.png" alt="FLL Azerbaijan competition" loading="lazy">
-        </figure>
-        <div class="project-body">
-          <h3 class="project-title">FLL Azerbaijan (1st Place)</h3>
-          <p class="project-desc">First place achievement in the FLL Azerbaijan competition, demonstrating strong technical skills and collaborative engineering work.</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <figure class="project-image">
+      <article class="project-card" tabindex="0" aria-labelledby="p-saf2025">
+        <figure class="project-visual" aria-hidden="true">
           <img src="/images/SAF2025.png" alt="SAF 2025 H2 Grand Prix Pro" loading="lazy">
+          <div class="project-badge">🏆 <span>1st — H2 GP</span></div>
         </figure>
-        <div class="project-body">
-          <h3 class="project-title">SAF 2025 – H2 GRAND PRIX PRO (1st Place)</h3>
-          <p class="project-desc">First place achievement in the SAF 2025 H2 Grand Prix Pro category, involving advanced robotics and engineering solutions.</p>
+        <div class="project-content">
+          <h3 id="p-saf2025" class="project-title">SAF 2025 — H2 GRAND PRIX PRO</h3>
+          <p class="project-desc">Advanced robotics challenge where we designed high-speed control strategies and robust mechanical systems to secure first place.</p>
+          <ul class="project-tags">
+            <li class="tag">🤖 Robotics</li>
+            <li class="tag">⚙️ Control</li>
+            <li class="tag">🧪 Prototyping</li>
+          </ul>
         </div>
       </article>
 
-      <article class="project-card">
-        <figure class="project-image">
-          <img src="/images/space.png" class="project-img--top" alt="Space Debris Recycling startup concept" loading="lazy">
+      <article class="project-card" tabindex="0" aria-labelledby="p-fll">
+        <figure class="project-visual" aria-hidden="true">
+          <img src="/images/fll1st.png" alt="FLL Azerbaijan 1st Place" loading="lazy">
+          <div class="project-badge">🥇 <span>FLL Azerbaijan</span></div>
         </figure>
-        <div class="project-body">
-          <h3 class="project-title">Space Debris Recycling Startup</h3>
-          <p class="project-desc">A startup concept focused on developing engineering solutions for the utilization and recycling of space debris.</p>
+        <div class="project-content">
+          <h3 id="p-fll" class="project-title">FLL Azerbaijan — 1st Place</h3>
+          <p class="project-desc">Collaborative engineering work focused on mission design, strategy, and resilient robot construction in competition conditions.</p>
+          <ul class="project-tags">
+            <li class="tag">🏁 Competition</li>
+            <li class="tag">🧩 Design</li>
+            <li class="tag">🤝 Teamwork</li>
+          </ul>
         </div>
       </article>
 
-      <article class="project-card">
-        <figure class="project-image">
-          <img src="/images/hour.png" class="project-img--full" alt="Hour of Code project" loading="lazy">
+      <article class="project-card" tabindex="0" aria-labelledby="p-space">
+        <figure class="project-visual" aria-hidden="true">
+          <img src="/images/space.png" alt="Space Debris Recycling concept" loading="lazy">
+          <div class="project-badge">💡 <span>Startup Concept</span></div>
         </figure>
-        <div class="project-body">
-          <h3 class="project-title">Principles of Information Systems – Hour of Code</h3>
-          <p class="project-desc">An academic course project introducing fundamental computing concepts through interactive coding activities.</p>
+        <div class="project-content">
+          <h3 id="p-space" class="project-title">Space Debris Recycling</h3>
+          <p class="project-desc">Conceptual startup exploring engineering approaches to capture, repurpose, and recycle orbital debris with systems thinking.</p>
+          <ul class="project-tags">
+            <li class="tag">🛰️ Space</li>
+            <li class="tag">♻️ Sustainability</li>
+            <li class="tag">🚀 Systems</li>
+          </ul>
         </div>
       </article>
 
-      <article class="project-card">
-        <figure class="project-image">
-          <img src="/images/projects/hardware.jpg" alt="How Does Hardware Work project" loading="lazy">
+      <article class="project-card" tabindex="0" aria-labelledby="p-saf2023">
+        <figure class="project-visual" aria-hidden="true">
+          <img src="/images/saf2023.jpeg" alt="SAF 2023 robotics competition" loading="lazy">
+          <div class="project-badge">🏅 <span>FLL Category</span></div>
         </figure>
-        <div class="project-body">
-          <h3 class="project-title">Principles of Information Systems – How Does Hardware Work?</h3>
-          <p class="project-desc">A course-based project exploring how computer hardware components function together as a system.</p>
+        <div class="project-content">
+          <h3 id="p-saf2023" class="project-title">SAF 2023 — FLL Category</h3>
+          <p class="project-desc">Hands-on robotics entry integrating sensors and strategy to solve complex tasks under time pressure.</p>
+          <ul class="project-tags">
+            <li class="tag">🔧 Hardware</li>
+            <li class="tag">📐 Design</li>
+            <li class="tag">⏱️ Competition</li>
+          </ul>
         </div>
       </article>
 
-      <article class="project-card">
-        <figure class="project-image">
-          <img src="/images/footapp.jpeg" class="project-img--full" alt="FootApp football app concept" loading="lazy">
+      <article class="project-card" tabindex="0" aria-labelledby="p-hour">
+        <figure class="project-visual" aria-hidden="true">
+          <img src="/images/hour.png" alt="Hour of Code project" loading="lazy">
+          <div class="project-badge">💻 <span>Course Project</span></div>
         </figure>
-        <div class="project-body">
-          <h3 class="project-title">FootApp – Football App Startup</h3>
-          <p class="project-desc">A startup idea for a football-related mobile application designed to enhance user engagement.</p>
+        <div class="project-content">
+          <h3 id="p-hour" class="project-title">Hour of Code — Principles of Info Systems</h3>
+          <p class="project-desc">An approachable learning project introducing peers to programming basics and computational thinking.</p>
+          <ul class="project-tags">
+            <li class="tag">🧠 Learning</li>
+            <li class="tag">📚 Education</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-card" tabindex="0" aria-labelledby="p-footapp">
+        <figure class="project-visual" aria-hidden="true">
+          <img src="/images/footapp.jpeg" alt="FootApp football app concept" loading="lazy">
+          <div class="project-badge">📱 <span>Startup Idea</span></div>
+        </figure>
+        <div class="project-content">
+          <h3 id="p-footapp" class="project-title">FootApp — Football App Concept</h3>
+          <p class="project-desc">A product-focused design exploring engagement mechanics, simple UX, and mobile-first interactions for sports fans.</p>
+          <ul class="project-tags">
+            <li class="tag">🎯 UX</li>
+            <li class="tag">📈 Product</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-card" tabindex="0" aria-labelledby="p-hard">
+        <figure class="project-visual" aria-hidden="true">
+          <img src="/images/hard.jpeg" alt="How Does Hardware Work" loading="lazy">
+          <div class="project-badge">🔌 <span>Course</span></div>
+        </figure>
+        <div class="project-content">
+          <h3 id="p-hard" class="project-title">How Does Hardware Work?</h3>
+          <p class="project-desc">Exploratory course project explaining key hardware components and their interactions using clear diagrams and demos.</p>
+          <ul class="project-tags">
+            <li class="tag">🔍 Explanation</li>
+            <li class="tag">🛠️ Hardware</li>
+          </ul>
         </div>
       </article>
     </section>
@@ -111,5 +162,6 @@
   </footer>
 
   <script src="/js/script.js"></script>
+    <script src="/js/navbar.js" defer></script>
 </body>
 </html>"},{ 
